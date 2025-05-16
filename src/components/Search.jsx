@@ -1,0 +1,14 @@
+import React from 'react'
+
+const Search = ({searchTerm, setSearchTerm}) => {
+  return (
+    <div className='search'>
+      <div>
+        <img src='/figma build/search.svg' alt ='search icon'/>
+        <input type = 'text' placeholder='Search here' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+      </div>
+      </div>
+  )
+}
+
+export default Search
